@@ -43,7 +43,7 @@ final String last = entry.getSave(); // The last text before unfocus!
 ```java
 final TurokMouse mouse = new TurokMouse(mousePositionX, mousePositionY);
 
-// For entry box, you alaways need update the scroll!
+// For entry box, you always need update the scroll!
 entry.doMouseScroll(mouse);
 
 // For you sync the mouse over of entry/button;
