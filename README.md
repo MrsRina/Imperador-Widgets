@@ -4,7 +4,7 @@ My modern widgets!
 IM NOT ENGLISH, MY ENGLISH MAY BE NOT GOOD!!
 
 For you implement in your game/client/project, remember, the code use OpenGL, the scissor!
-You can replace the all render methods on the code for your own classes!
+You can replace the all render methods on the code with your own classes!
 
 I use my own system font, I use the hal font renderer!
 You can look in TurokFramework!
