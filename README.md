@@ -52,6 +52,7 @@ button.doMouseOver(mouse);
 // The event click for button & entry is the mouseClicked(int mx, int my, int button) (Minecraft GUI);
 button.onMouseClicked(button);
 entry.onMouseClicked(button);
+// Remember do onMouseReleased in mouseReleased (Minecraft GUI);
 entry.doSetIndexAB(button); // For sync the entry box selections.
 
 // For entry box keytyped, the keyTyped method in (Minecraft GUI);
@@ -61,4 +62,4 @@ entry.onKeyboardPressed(char character, int key);
 
 # Sorry
 
-I dont want to make a library or a big thing, I want oly share my works and help who is starting!
+I dont want to make a library or a big thing, I want only share my works and help who is starting!
