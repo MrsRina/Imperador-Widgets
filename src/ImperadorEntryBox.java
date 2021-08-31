@@ -542,7 +542,7 @@ public class ImperadorEntryBox extends Widget {
                         }
 
                         String memory;
-                        int skip = 1;
+                        int skip = 0;
 
                         if (Keyboard.isKeyDown(Keyboard.KEY_RCONTROL) || Keyboard.isKeyDown(Keyboard.KEY_LCONTROL)) {
                             memory = cache.substring(0, this.indexA);
@@ -583,6 +583,7 @@ public class ImperadorEntryBox extends Widget {
                             }
                         } else {
                             memory = StringUtils.chop(cache.substring(0, this.indexA));
+                            skip = 1;
                         }
 
                         cache = memory + cache.substring(this.indexA, this.text.length());
