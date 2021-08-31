@@ -572,7 +572,10 @@ public class ImperadorEntryBox extends Widget {
                                     }
                                 }
 
-                                skip = index - memory.length();
+                                for (String c : memory.substring(index, memory.length()).split("")) {
+                                    skip++;
+                                }
+
                                 memory = memory.substring(0, index);
                             }
                         } else {
@@ -580,7 +583,7 @@ public class ImperadorEntryBox extends Widget {
                         }
 
                         cache = memory + cache.substring(this.indexA, this.text.length());
-                        a -= -skip;
+                        a = a - skip;
 
                         break;
                     }
