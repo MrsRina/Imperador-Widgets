@@ -347,6 +347,9 @@ public class ImperadorEntryBox extends Widget {
         if (!this.isMouseOver()) {
             return;
         }
+        
+        this.offsetW = TurokMath.clamp(mouse.getX(), this.rect.getX() + this.offsetX, this.rect.getX() + this.rect.getWidth());
+        this.offsetH = this.getIndexByPosition(this.offsetW);
 
         this.splitTick.reset();
 
@@ -403,7 +406,7 @@ public class ImperadorEntryBox extends Widget {
         }
 
         if (this.offsetH == -1) {
-            this.offsetH = this.getIndexByPosition(this.offsetW);
+            return;
         }
 
         // If you did not know, the split is not rendered when you drag.
