@@ -1,6 +1,6 @@
 # Imperador-Widgets
 
-What is this? Imperador widgets is a entry box source code, it has copy | paste | delete + words | backward + words | select | scroll | type
+What is this? Imperador widgets is an entry box source code, it has copy | paste | delete + words | backward + words | select | scroll | type
 
 How to use it? This was developed into Minecraft context, but you can look the code and use it how you want.
 
